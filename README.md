@@ -65,8 +65,7 @@
 - For a consistent colorscheme across gtk and terminal applications, colors must be defined for:
   - i3 config
   - Xresources
-  - Vim
+  - Vim (using themes)
   - Firefox
-  - GTK 2 & GTK 3
-  - Rofi
+  - GTK 2 & GTK 3 (currently using [SolArc theme](https://github.com/schemar/solarc-theme) which is a solarized version of Arc)
 ---
