@@ -35,8 +35,16 @@
 ---
 
 ## Ncmpcpp/Mopidy/Spotify
-- 
+- Install mopidy and mopidy-spotify
+- Install ncmpcpp
+- Create mopidy config file in ~/.config/mopidy/mobidy.conf
+  - mopidy log files are also in the ~/.config/mopidy folder
+- Create ncmpcpp config file in ~/.ncmcpp/config
+- Start mopidy by running: nohup mopidy &
+- ncmpcpp can be launched and used 
+  - visualisation with mopidy and mopify-spotify not working as of yey
 ---
+
 ## Fonts
 - System San Francisco Display, 13pt (general/default font)
 - Adobe Source Code Pro, 20pt (monospaced font)
