@@ -45,6 +45,13 @@
   - visualisation with mopidy and mopify-spotify not working as of yey
 ---
 
+## Rofi 
+- Install rofi
+- Set to exec when i3 is started instead of dmenu (in i3 config)
+- Customise look using ~/.Xresources
+- Set a compton opacity rule so that Rofi is at 85% opacity
+---
+
 ## Fonts
 - System San Francisco Display, 13pt (general/default font)
 - Adobe Source Code Pro, 20pt (monospaced font)
