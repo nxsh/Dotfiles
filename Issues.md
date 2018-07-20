@@ -15,3 +15,5 @@
 - Cannot get ncmpcpp's visualisation to work with mopidy/mopidy-spotify
   - 'Error while processing option "visualiser_fifo_path": option already set'
   - ncmpcpp seems to think visualisation configs have been set somewhere other than ~/.ncmpcpp/config
+
+- When shutting down or rebooting 'Watchdog0 did not stop' appears
