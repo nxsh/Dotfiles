@@ -12,6 +12,7 @@
 - Set UK keyboard (iBus has no English UK, settle with UK Extended until fix in [Errors](Dotfiles/Errors.md) is tested
 - Install 'arandr' to configure multiple monitors when using i3
 - Install bumblebee (pus Intel & Nvidia graphic drivers) to properly control Nvdia GPU
+- Install Rofi, style in ~/.Xresources, and set to exec in i3 config instead of dmenu
 ---
 
 ## i3
@@ -26,6 +27,11 @@
 - Custom scripts: (currently located in: /usr/share/i3blocks/)
   - IntBat
   - ExtBat
+---
+
+## Compton
+- Created compton.conf in: ~/.config/
+  - Added an opacity rule for Rofi and URxvt
 ---
 
 ## Fonts
