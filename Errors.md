@@ -9,3 +9,5 @@
 - iBus KB layout applet (indicator applet) does not have UK English, only 'UK Extended WinKeys'
   - it also opens as a window when i3 is restarted
   - same issue with nm-applet, it opens in a window when i3 is restarted (shift,$mod,r)
+
+- i3 dual monitor, when a workspace on another monitor is inactive or unfocused the color scheme is ignored, the background is grey with white text
