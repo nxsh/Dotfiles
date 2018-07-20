@@ -46,9 +46,3 @@
   - GTK 2 & GTK 3
   - Rofi
 ---
-
-Bugs:
---------
-iBus indicator applet for keyboard not showing English UK
-	- closest is English UK Extended
-
