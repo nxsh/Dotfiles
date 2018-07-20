@@ -11,3 +11,7 @@
   - same issue with nm-applet, it opens in a window when i3 is restarted (shift,$mod,r)
 
 - i3 dual monitor, when a workspace on another monitor is inactive or unfocused the color scheme is ignored, the background is grey with white text
+
+- Cannot get ncmpcpp's visualisation to work with mopidy/mopidy-spotify
+  - 'Error while processing option "visualiser_fifo_path": option already set'
+  - ncmpcpp seems to think visualisation configs have been set somewhere other than ~/.ncmpcpp/config
