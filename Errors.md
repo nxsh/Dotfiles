@@ -5,3 +5,7 @@
   
 - TLP
   - tlp stat -b shows that BAT0 (internal) status is unknown and 'threshold effective'
+
+- iBus KB layout applet (indicator applet) does not have UK English, only 'UK Extended WinKeys'
+  - it also opens as a window when i3 is restarted
+  - same issue with nm-applet, it opens in a window when i3 is restarted (shift,$mod,r)
