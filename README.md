@@ -1,5 +1,5 @@
 # Dotfiles
-Dotfiles (configs) for ricing, and Linux installation notes
+Dotfiles (configs) for ricing, and notes from my Debian 9 install on my T480
 ---
  Install Debian live CD
 - Use ethernet or have the firmware-iwlwifi package downloaded to the live CD stick
