@@ -1,79 +1,54 @@
 # Dotfiles
-Dotfiles (configs) for ricing, and notes from my Debian 9 install on my T480
----
- Install Debian live CD
+## Install and ricing notes from my Debian 9 install on my T480
+
+- Install Debian live CD
 - Use ethernet or have the firmware-iwlwifi package downloaded to the live CD stick
-- if installing via ethernet, install the above package after editing the sources file
-- append 'contrib non-free' to each of the debian sources (without quotes), a la:
+	- if installing via ethernet, install the above package after editing the sources file
+- Append 'contrib non-free' to each of the debian sources (without quotes), a la:
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
-- install i3 gaps by installing i3 and then running i3-gaps-debian tool from github
-- add config lines from i3-gaps-tool to i3 config after generating it
--------------------------------------------------------------
-install Yosemite font and use it as i3 font by editing config
-install lxapperance to configure gtk settings
-added feh exec to i3 config
+- install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
+- Add config lines from i3-gaps-tool to i3 config after generating it
+- Install lxappearance to configure gtk themes
+- Set UK keyboard (iBus has no English UK, settle with UK Extended until fix in [Errors](Dotfiles/Errors.md) is tested
+- Install 'arandr' to configure multiple monitors when using i3
+- Install bumblebee (pus Intel & Nvidia graphic drivers) to properly control Nvdia GPU
+---
 
-Set UK keyboard layout:
-	- added xkb layout -gb exec to i3 config (still not working)
-	- set UK extended layout by right clicking 'EN' at the bottom right of i3block bar
-		- this launches iBus gui allowing to choose kb layout
+## i3
+- Add keybindings for brightness and sound 
+  - Brightness requires xbacklight to be installed
+- Add execs for feh, compton, and nm-applet
+- Define colors (Solarized color scheme)
+- Set status_command to launch i3blocks instead of i3bar
+---
 
-installed tlp
-installed thinkfan
-set up dual monitors using xfce display settings (not fully working)
-added brightness control in i3 config (only working in XFCE currently)
-installed compton and added exec line in i3 config
--------------
- TLP Steps
--------------
-install tlp tlp-rdw acpi-call-dkms (maybe tp-smapi-dkms check back later)
+## i3blocks
+- Custom scripts: (currently located in: /usr/share/i3blocks/)
+  - IntBat
+  - ExtBat
+---
 
---------------
-ThinkFan Steps
---------------
-do not run using init.d, use system d
-may need to load thinkpad_acpi module at boot (add to /etc/modules)
-create a backup image to restore to of system before thinkfan is installed
-then figure out how to get it working quickly with no errors
-then restore to image and install correctly
+## Fonts
+- System San Francisco Display, 13pt (general/default font)
+- Adobe Source Code Pro, 20pt (monospaced font)
+- Fonts need to be defined for:
+  - i3
+  - Xresources
+  - lxappearance (gtk2/3)
+---
 
---------------------------------------------------------------------------
-next steps to do and document:
-------------------------------
-configure i3
-install nvidia/intel display drivers
-get brightness keys to work
-install polybar
-install sound monitor applet to keep track of volume visually
-install spotify with ncmpccp
-set up bare-metal windows hypervisor for gpu passthrough
-find out how to always drain BAT1 first (removable battery)
+## Color Scheme
+- For a consistent colorscheme across gtk and terminal applications, colors must be defined for:
+  - i3 config
+  - Xresources
+  - Vim
+  - Firefox
+  - GTK 2 & GTK 3
+  - Rofi
+---
 
-------------------------------
-install mopidy with spotify & ncmpcpp
-
------------------------------------
-Edited sudoers file to allow running tlp stat -b without password
-This is to I can create scripts to get the battery percentage from TLP instead of the default system way
-These scripts are for i3 blocks
-Currently located in /usr/share/i3blocks/scriptname
-
-------------------------------------------------------
 Bugs:
 --------
 iBus indicator applet for keyboard not showing English UK
 	- closest is English UK Extended
 
----------------------------------------------
-Fonts: System San Francisco for general use
-	Adobe Source Code Pro for monospace
-----------------------------------------------
-
-Colorscheme must be set in:
-----------------------------
-i3 config
-Xresources
-Vim
-Firefox
-GTK 2 & GTK 3
-Rofi
