@@ -41,7 +41,7 @@
 ---
 
 ## i3blocks
-- Custom scripts: (currently located in: /usr/share/i3blocks/)
+- Custom scripts: (currently located in: ~/.config/i3/i3blocks/)
   - IntBat
   - ExtBat
 ---
