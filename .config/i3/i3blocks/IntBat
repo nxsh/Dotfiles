@@ -1,0 +1,4 @@
+#!/bin/bash
+
+BAT=$(acpi -b | awk '{print $4}' | cut -d % -f 1 | head -n 1)
+echo "$BAT%"
