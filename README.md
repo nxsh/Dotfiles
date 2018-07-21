@@ -81,6 +81,10 @@
   - lxappearance (gtk2/3)
 ---
 
+## Icons
+- Currently using Papirus icons
+---
+
 ## Color Scheme
 - [Solarized theme](https://adrien.is/configuring-solarized-colors/)
 - [Solarized cheat sheet](http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/)
