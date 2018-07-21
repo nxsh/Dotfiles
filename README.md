@@ -77,6 +77,7 @@
 - System San Francisco Display, 13pt (general/default font)
 - Adobe Source Code Pro, 20pt (monospaced font)
 - FontAwesome, install via apt
+- Use [Infinality](http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html) for better font rendering
 - Fonts need to be defined for:
   - i3
   - Xresources
