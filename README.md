@@ -16,7 +16,8 @@
 ---
 
 ## TLP 
-- Install: tlp tlp-rdw acpi-call-dkms tp-smapi-dkms
+- Install: tlp tlp-rdw acpi-call-dkms
+  - Do not install tp-smapi-dkms, it does not work with modern ThinkPads
 - [Install guide](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation)
 --- 
 
@@ -81,6 +82,9 @@
 ---
 
 ## Color Scheme
+- [Solarized theme](https://adrien.is/configuring-solarized-colors/)
+- [Solarized cheat sheet](http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/)
+- Test out pywal to create color schemes from wallpaper
 - For a consistent colorscheme across gtk and terminal applications, colors must be defined for:
   - i3 config
   - Xresources
