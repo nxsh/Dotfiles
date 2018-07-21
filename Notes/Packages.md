@@ -1,0 +1,23 @@
+## Packages to install
+
+- rofi  
+- cowsay
+- URxvt
+- i3 i3blocks
+- tlp
+- thinkfan
+- mopidy mopidy-spotify
+- ncmpcpp
+- ranger
+- s-tui
+- feh
+- compton
+- neomutt
+- lxappearance
+- mpv
+- git
+- transmission
+- firefox (quantum)
+- vim full
+- spacemacs
+- xbacklight
