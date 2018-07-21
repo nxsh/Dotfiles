@@ -76,6 +76,7 @@
 ## Fonts
 - System San Francisco Display, 13pt (general/default font)
 - Adobe Source Code Pro, 20pt (monospaced font)
+- FontAwesome, install via apt
 - Fonts need to be defined for:
   - i3
   - Xresources
