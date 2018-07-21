@@ -15,6 +15,21 @@
 - Install Rofi, style in ~/.Xresources, and set to exec in i3 config instead of dmenu
 ---
 
+## TLP 
+- Install: tlp tlp-rdw acpi-call-dkms tp-smapi-dkms
+- [Install guide](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation)
+--- 
+
+## ThinkFan
+- Run using systemd, not init.d
+- May need to load 'thinkpad_acpi' at boot (by adding to /etc/modules)
+- [X220 guide](http://x220.mcdonnelltech.com/ubuntu/) | [Debian guide](https://forum.thinkpads.com/viewtopic.php?t=119546)
+  - Debian guide runs using init.d *Do not do this!*
+  - X220 guide is perfect apart from the sensors to add to /etc/thinkfan.conf
+  - Use `find /sys/devices -type f -name "temp*_input"` command to get proper sensor location
+    - then add to /etc/thinkfan.conf
+---
+
 ## i3
 - Add keybindings for brightness and sound 
   - Brightness requires xbacklight to be installed
