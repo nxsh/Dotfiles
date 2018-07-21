@@ -4,6 +4,7 @@
 - Install Debian live CD
 - Use ethernet or have the firmware-iwlwifi package downloaded to the live CD stick
 	- if installing via ethernet, install the above package after editing the sources file
+	  - iwlwifi-8265-ucode-22 to iwlwifi-8265-ucode 26 (all packages from 22-26
 - Append 'contrib non-free' to each of the debian sources (without quotes), a la:
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
 - install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
