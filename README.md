@@ -24,6 +24,8 @@
 - Install bumblebee (pus Intel & Nvidia graphic drivers) to properly control Nvdia GPU
 - Install Papirus icons
 - Install Arc theme
+- Copy files from San Francisco fonts folder to ~/.fonts (only ttf files)
+- Run SourceCodePro bash script as root to install adobe source code pro font
 - Install the following:
 ---
 
