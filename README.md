@@ -14,13 +14,13 @@
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
 - Run apt update && apt upgrade to update all packages to newest
 - If installation was via ethernet, install the `firmware-iwlwifi` package (needed for wifi to work)
+- Reboot
 - install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
 - Add config lines from i3-gaps-tool to i3 config after generating it
 - Install lxappearance to configure gtk themes
-- Set UK keyboard (iBus has no English UK, settle with UK Extended until fix in [Errors](Dotfiles/Errors.md) is tested
 - Install 'arandr' to configure multiple monitors when using i3
 - Install bumblebee (pus Intel & Nvidia graphic drivers) to properly control Nvdia GPU
-- Install Rofi, style in ~/.Xresources, and set to exec in i3 config instead of dmenu
+- Install the following:
 ---
 
 ## TLP 
@@ -45,6 +45,7 @@
 - Add execs for feh, compton, and nm-applet
 - Define colors (Solarized color scheme)
 - Set status_command to launch i3blocks instead of i3bar
+- Set rofi to exec instead of dmenu
 ---
 
 ## i3blocks
