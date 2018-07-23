@@ -12,6 +12,7 @@
   - sudo adduser <username> sudo
 - Append 'contrib non-free' to each of the debian sources (without quotes), a la:
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
+- Add stretch backports to sources list
 - Run apt update && apt upgrade to update all packages to newest
 - If installation was via ethernet, install the `firmware-iwlwifi` package (needed for wifi to work)
 - Reboot
@@ -38,7 +39,8 @@
 
 
 ## TLP 
-- Install: tlp tlp-rdw acpi-call-dkms
+- Install: tlp tlp-rdw acpi-call-dkms from stretch backports
+  - sudo apt-get -t stretch-backports install tlp tlp-rdw acpi-call-dkms
   - Do not install tp-smapi-dkms, it does not work with modern ThinkPads
 - [Install guide](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html#installation)
 --- 
@@ -66,6 +68,8 @@
 - Custom scripts: (currently located in: ~/.config/i3/i3blocks/)
   - IntBat
   - ExtBat
+  - These scripts need to be made executable in order for them to appear in i3blocks bar
+    - `sudo chmod +x ScriptName`
 ---
 
 ## Compton
