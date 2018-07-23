@@ -8,6 +8,8 @@
 - Uninstall iBus and set keyboard to UK in XFCE settings
   - apt remove --auto-remove ibus
   - apt purge --auto-remove ibus
+- Add user (ryan) to sudoers
+  - sudo adduser <username> sudo
 - Append 'contrib non-free' to each of the debian sources (without quotes), a la:
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
 - install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
