@@ -117,6 +117,7 @@
 ## Color Scheme
 - [Solarized theme](https://adrien.is/configuring-solarized-colors/)
 - [Solarized cheat sheet](http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/)
+- Install arc-theme from debian backports
 - Test out pywal to create color schemes from wallpaper
 - For a consistent colorscheme across gtk and terminal applications, colors must be defined for:
   - i3 config
