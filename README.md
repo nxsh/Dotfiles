@@ -70,7 +70,8 @@
 - Find sensor location
   - run `find /sys/devices -type f -name "temp*_input"`
   - add output to /etc/thinkfan.conf (or use my own from this repo when configured)
-- make /var/run/thinkfan.pid readable (chmod +r)
+- make /var/run/thinkfan.pid readable (`sudo chmod -R +rw /var/run/thinkfan.pid`)
+  - if this does not work after a reboot, it is because the thinkfan pid is not being created, does not exist, or cannot be seen due to permissions
 ---
 
 ## i3
