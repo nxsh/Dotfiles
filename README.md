@@ -16,7 +16,9 @@
 - If installation was via ethernet, install the `firmware-iwlwifi` package (needed for wifi to work)
 - Reboot
 - install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
-- Add config lines from i3-gaps-tool to i3 config after generating it
+  - unzip i3-gaps-deb.zip into Downloads
+  - run as bash file `./i3-gaps-deb`
+- Add config lines from i3-gaps-tool to i3 config after generating it (only on first i3 configuration)
 - Install lxappearance to configure gtk themes
 - Install 'arandr' to configure multiple monitors when using i3
 - Install bumblebee (pus Intel & Nvidia graphic drivers) to properly control Nvdia GPU
