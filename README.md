@@ -22,8 +22,14 @@
 - Install lxappearance to configure gtk themes
 - Install 'arandr' to configure multiple monitors when using i3
 - Install bumblebee (pus Intel & Nvidia graphic drivers) to properly control Nvdia GPU
+- Install Papirus icons
+- Install Arc theme
 - Install the following:
 ---
+
+- Copy config files in this repo to correct locations
+  - Install the program that uses each config file first
+
 
 ## TLP 
 - Install: tlp tlp-rdw acpi-call-dkms
