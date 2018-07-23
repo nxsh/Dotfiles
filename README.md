@@ -37,6 +37,9 @@
 - Copy xorg.conf.d folder to /etc/X11/
 - Created '30-backlight.conf' inside xorg.conf.d and deleted xorg.conf where the display backlight was configured before
 
+- install Pip
+  - sudo apt-get install python3-pip
+- install s-tui `sudo pip3 install s-tui`
 
 ## TLP 
 - Install: tlp tlp-rdw acpi-call-dkms from stretch backports
