@@ -12,6 +12,8 @@
   - sudo adduser <username> sudo
 - Append 'contrib non-free' to each of the debian sources (without quotes), a la:
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
+- Run apt update && apt upgrade to update all packages to newest
+- If installation was via ethernet, install the `firmware-iwlwifi` package (needed for wifi to work)
 - install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
 - Add config lines from i3-gaps-tool to i3 config after generating it
 - Install lxappearance to configure gtk themes
