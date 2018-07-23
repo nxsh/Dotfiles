@@ -53,6 +53,20 @@
   - X220 guide is perfect apart from the sensors to add to /etc/thinkfan.conf
   - Use `find /sys/devices -type f -name "temp*_input"` command to get proper sensor location
     - then add to /etc/thinkfan.conf
+
+- Become root (sudo bash)
+- apt install thinkfan
+- echo "options thinkpad_acpi fan_control=1" > /etc/modprobe.d/thinkfan.conf
+- sudo sh -c 'echo coretemp >> /etc/modules'
+- modprobe thinkpad_acpi
+- modprobe coretemp
+- nano -w /etc/default/thinkfan
+  - Add `START=yes`
+- nano -w /etc/default/thinkfan
+- systemctl enable thinkfan.service
+- Find sensor location
+  - run `find /sys/devices -type f -name "temp*_input"`
+  - add output to /etc/thinkfan.conf (or use my own from this repo when configured)
 ---
 
 ## i3
