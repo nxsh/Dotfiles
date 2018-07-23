@@ -2,7 +2,7 @@
 
 - rofi  
 - cowsay
-- URxvt
+- URxvt (rxvt-unicode)
 - i3 i3blocks
 - tlp
 - thinkfan
