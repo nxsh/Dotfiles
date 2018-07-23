@@ -107,7 +107,12 @@
 - Create ncmpcpp config file in ~/.ncmcpp/config
 - Start mopidy by running: nohup mopidy &
 - ncmpcpp can be launched and used 
-  - visualisation with mopidy and mopify-spotify not working as of yet
+- install socat to watch UDP port for visualiser
+
+### Visualiser (everything here must be done on *every* boot)
+- create fifo file for visualiser `mkfifo /tmp/mpd.fifo`
+- run `while :; do socat -d -d -T 1 -u UDP4-LISTEN:5555 OPEN:/tmp/mpd.fifo; done &`
+  - notice the '&' at the end, this lets the command run in the background, freeing up terminal space
 ---
 
 ## Rofi 
