@@ -123,7 +123,14 @@
 ---
 
 ## Vim
-- Not configured yet
+- Remove Vim tiny `sudo apt remove vim-tiny`
+- Install Vim full `sudo apt install vim`
+- Create ~/.vim/ folder and ~/.vim/colors/
+- Copy solarized.vim to .vim/colors/
+- Create .vimrc file in ~/.vim/
+- Set vim as default editor
+  - sudo update-alternatives –config editor
+    - select vim, not vim basic
 ---
 
 ## Fonts
