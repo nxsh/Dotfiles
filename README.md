@@ -65,12 +65,13 @@
 - modprobe coretemp
 - nano -w /etc/default/thinkfan
   - Add `START=yes`
+  - Uncomment `#DAEMON ARGS_"-q"
 - nano -w /etc/default/thinkfan
 - systemctl enable thinkfan.service
 - Find sensor location
   - run `find /sys/devices -type f -name "temp*_input"`
   - add output to /etc/thinkfan.conf (or use my own from this repo when configured)
-- make /var/run/thinkfan.pid readable (`sudo chmod -R +rw /var/run/thinkfan.pid`)
+  - make /var/run/thinkfan.pid readable *only if it is not starting on boot* (`sudo chmod -R +rw /var/run/thinkfan.pid`)
   - if this does not work after a reboot, it is because the thinkfan pid is not being created, does not exist, or cannot be seen due to permissions
 ---
 
