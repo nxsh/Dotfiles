@@ -127,10 +127,10 @@
 - Install Vim full `sudo apt install vim`
 - Create ~/.vim/ folder and ~/.vim/colors/
 - Copy solarized.vim to .vim/colors/
-- Create .vimrc file in ~/.vim/
+- Create .vimrc file `sudo -E vi ~/.vimrc`
 - Set vim as default editor
   - sudo update-alternatives –config editor
-    - select vim, not vim basic
+- To use my .vimrc while editing root owned files `sudo -E vi ~/.vimrc`
 ---
 
 ## Fonts
