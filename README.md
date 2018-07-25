@@ -140,6 +140,21 @@
     - `sudo git clone https://github.com/tpope/vim-sensible.git`
 ---
 
+## [Firefox Quantum](https://wiki.debian.org/Firefox#Firefox_Stable.2C_Beta_and_Nightly)
+- Download [firefox tar](https://www.mozilla.org/en-US/firefox/)
+- `cd Downloads`
+- `tar xvjf firefox-(version number).tar.bz2`
+- Copy newly created 'firefox' folder to /opt/
+  - `sudo cp -vr firefox /opt/firefox`
+- Create firefox-stable.desktop file
+  - `sudo -E vi /usr/share/applications/firefox-stable.desktop`
+- Symlink to allow new firefox to run from command line
+  - sudo ln -s /opt/firefox/firefox /usr/local/bin/
+- Set new firefox as the chosen alternative
+  - sudo update-alternatives --install /usr/bin/x-www-browser x-www-browser /opt/firefox/firefox 200
+  - sudo update-alternatives --set x-www-browser /opt/firefox/firefox
+---
+
 ## Fonts
 - System San Francisco Display, 13pt (general/default font)
 - Adobe Source Code Pro, 20pt (monospaced font)
