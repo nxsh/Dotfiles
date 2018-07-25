@@ -65,7 +65,6 @@
 - modprobe coretemp
 - nano -w /etc/default/thinkfan
   - Add `START=yes`
-  - Uncomment `#DAEMON ARGS_"-q"
 - nano -w /etc/default/thinkfan
 - systemctl enable thinkfan.service
 - Find sensor location
@@ -132,6 +131,13 @@
 - Set vim as default editor
   - sudo update-alternatives –config editor
 - To use my .vimrc while editing root owned files `sudo -E vi ~/.vimrc`
+
+### Vim Plugins
+- Create ~/.vim/pack/plugins/start/
+  - This is the folder to install plugins in
+  - Example:
+    - `cd ~/.vim/pack/plugins/start`
+    - `sudo git clone https://github.com/tpope/vim-sensible.git`
 ---
 
 ## Fonts
