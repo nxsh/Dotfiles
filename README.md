@@ -70,8 +70,8 @@
 - Find sensor location
   - run `find /sys/devices -type f -name "temp*_input"`
   - add output to /etc/thinkfan.conf (or use my own from this repo when configured)
-- ThinkFan loads before the temp sensors so the thinkfan.service file needs [delaying](https://stackoverflow.com/questions/43001223/how-to-ensure-that-there-is-a-delay-before-a-service-is-started-in-systemd)
-  - Add `ExecStartPre=/bin/sleep 30` (delay for 30 seconds) to /etc/systemd/system/multi-user.target.wants/thinkfan.service
+- ThinkFan loads before the `thinkpad_acpi` kernel module so the thinkfan.service file needs [delaying](https://stackoverflow.com/questions/43001223/how-to-ensure-that-there-is-a-delay-before-a-service-is-started-in-systemd)
+  - Add `ExecStartPre=/bin/sleep 20` (delay for 20 seconds) to /etc/systemd/system/multi-user.target.wants/thinkfan.service
     - On the line *before* `ExecStart=/`
 ---
 
