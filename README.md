@@ -156,6 +156,11 @@
   - sudo update-alternatives --set x-www-browser /opt/firefox/firefox
 ---
 
+## OpenVPN (Mullvad)
+- install openvpn and network-manager-openvpn packages
+- Follow [Mullvad instructions](https://mullvad.net/en/guides/linux-openvpn-installation/) (Follow Ubuntu 16.04 and newer instructions)
+---
+
 ## Fonts
 - System San Francisco Display, 13pt (general/default font)
 - Adobe Source Code Pro, 20pt (monospaced font)
