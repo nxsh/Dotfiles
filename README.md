@@ -134,6 +134,7 @@
 - To use my .vimrc while editing root owned files `sudo -E vi ~/.vimrc`
 
 ### Vim Plugins
+- Install `vim-gtk` package
 - Create ~/.vim/pack/plugins/start/
   - This is the folder to install plugins in
   - Example:
