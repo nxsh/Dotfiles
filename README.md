@@ -166,6 +166,7 @@
 - Adobe Source Code Pro, 20pt (monospaced font)
 - FontAwesome, install via apt
 - Use [Infinality](http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html) for better font rendering
+  - Follow Debian section
 - Fonts need to be defined for:
   - i3
   - Xresources
@@ -187,4 +188,5 @@
   - Vim (using themes)
   - Firefox
   - GTK 2 & GTK 3 (currently using [SolArc theme](https://github.com/schemar/solarc-theme) which is a solarized version of Arc)
+    - SolArc needs `libgtk-3-dev` to be installed
 ---
