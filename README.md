@@ -178,6 +178,32 @@
 - Currently using Papirus icons
 ---
 
+## Powerline
+Do not install pip3, install pip instead (python-pip package)
+Actually just install from debian repos (powerline fonts-powerline)
+Powerline steps:
+
+sudo apt install powerline powerline-fonts
+edit .bashrc and add:
+  if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+    powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
+    source /usr/share/powerline/bindings/bash/powerline.sh
+  fi
+reboot
+DO NOT** copy /usr/share/powerline/ to ~/.config/ (needs configuring in install location)
+  this is /usr/share/powerline/
+edit /usr/share/powerline/config_files/config.json
+  change colorscheme to solarized
+Download vim __init__.py and plugin folder from powerline github repo
+Place in /usr/share/powerline/vim
+
+**Currently some powerline symbols are not appearing correctly
+Most notably when cd'ing into a long directory name:
+  cd /usr/share/powerline/bindings/
+---
+
 ## Color Scheme
 - [Solarized theme](https://adrien.is/configuring-solarized-colors/)
 - [Solarized cheat sheet](http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/)
