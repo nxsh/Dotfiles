@@ -5,20 +5,18 @@
 - Sign in to firefox and sync
 - Add user (ryan) to sudoers
   - sudo adduser <username> sudo
+- Reboot
+- Sudo apt update
+	- Append 'contrib non-free' to each of the debian sources (without quotes), a la:
+	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free	
+	- Add stretch backports to sources list if not upgrading to testing or unstable
+- Sudo apt update
+- Install firmware-iwlwifi package (wifi driver)
 - Sudo apt update && upgrade
 - Reboot
-- Use ethernet or have the firmware-iwlwifi package downloaded to the live CD stick
-	- if installing via ethernet, install the above package after editing the sources file
-	  - iwlwifi-8265-ucode-22 to iwlwifi-8265-ucode 26 (all packages from 22-26
 - Uninstall iBus and set keyboard to UK in XFCE settings
   - apt remove --auto-remove ibus
   - apt purge --auto-remove ibus
-
-- Append 'contrib non-free' to each of the debian sources (without quotes), a la:
-	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
-- Add stretch backports to sources list
-- Run apt update && apt upgrade to update all packages to newest
-- If installation was via ethernet, install the `firmware-iwlwifi` package (needed for wifi to work)
 - Reboot
 - install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
   - unzip i3-gaps-deb.zip into Downloads
