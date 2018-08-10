@@ -1,15 +1,19 @@
 # Dotfiles
 ## Install and ricing notes from my Debian 9 install on my T480
 
-- Install Debian live CD
+- Install from Debian live CD
+- Sign in to firefox and sync
+- Add user (ryan) to sudoers
+  - sudo adduser <username> sudo
+- Sudo apt update && upgrade
+- Reboot
 - Use ethernet or have the firmware-iwlwifi package downloaded to the live CD stick
 	- if installing via ethernet, install the above package after editing the sources file
 	  - iwlwifi-8265-ucode-22 to iwlwifi-8265-ucode 26 (all packages from 22-26
 - Uninstall iBus and set keyboard to UK in XFCE settings
   - apt remove --auto-remove ibus
   - apt purge --auto-remove ibus
-- Add user (ryan) to sudoers
-  - sudo adduser <username> sudo
+
 - Append 'contrib non-free' to each of the debian sources (without quotes), a la:
 	- deb http://ftp.uk.debian.org/debian/ stretch main contrib non-free
 - Add stretch backports to sources list
