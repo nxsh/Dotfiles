@@ -18,7 +18,11 @@
   - apt remove --auto-remove ibus
   - apt purge --auto-remove ibus
 - Reboot
-- install i3 gaps by installing i3 and then running [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
+	
+- Optionally upgrade to debian testing or unstable if wanted, then reboot after apt upgrade & dist-upgrade
+- install i3 gaps 
+  - apt-get install i3 suckless-tools i3blocks
+  - run [i3-gaps-debian tool](https://github.com/maestrogerardo/i3-gaps-deb) from github
   - unzip i3-gaps-deb.zip into Downloads
   - run as bash file `./i3-gaps-deb`
 - Add config lines from i3-gaps-tool to i3 config after generating it (only on first i3 configuration)
