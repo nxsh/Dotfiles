@@ -1,0 +1,26 @@
+## ThinkFan
+- Run using systemd, not init.d
+- May need to load 'thinkpad_acpi' at boot (by adding to /etc/modules)
+- [X220 guide](http://x220.mcdonnelltech.com/ubuntu/) | [Debian guide](https://forum.thinkpads.com/viewtopic.php?t=119546)
+  - Debian guide runs using init.d *Do not do this!*
+  - X220 guide is perfect apart from the sensors to add to /etc/thinkfan.conf
+  - Use `find /sys/devices -type f -name "temp*_input"` command to get proper sensor location
+    - then add to /etc/thinkfan.conf
+
+- Become root (sudo bash)
+- apt install thinkfan
+- echo "options thinkpad_acpi fan_control=1" > /etc/modprobe.d/thinkfan.conf
+- sudo sh -c 'echo coretemp >> /etc/modules'
+- modprobe thinkpad_acpi
+- modprobe coretemp
+- nano -w /etc/default/thinkfan
+  - Add `START=yes`
+- nano -w /etc/default/thinkfan
+- systemctl enable thinkfan.service
+- Find sensor location
+  - run `find /sys/devices -type f -name "temp*_input"`
+  - add output to /etc/thinkfan.conf (or use my own from this repo when configured)
+- ThinkFan loads before the `thinkpad_acpi` kernel module so the thinkfan.service file needs [delaying](https://stackoverflow.com/questions/43001223/how-to-ensure-that-there-is-a-delay-before-a-service-is-started-in-systemd)
+  - Add `ExecStartPre=/bin/sleep 20` (delay for 20 seconds) to /etc/systemd/system/multi-user.target.wants/thinkfan.service
+    - On the line *before* `ExecStart=/`
+---
