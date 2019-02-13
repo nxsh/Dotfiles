@@ -3,10 +3,15 @@
 
 ## Dotfiles To Do
 
+### PRIORITY
+- create system to sync dotfiles to this repo and the corresponding directory on my machine autonomously
+  + e.g. sync i3 config to `~/.config/i3/config`
+- create script to copy local uni files to xanthus as backups
+  
 ### i3/i3blocks
 - edit i3blocks scripts to make them more interesting
-  - change the battery scripts so that the percentage changes color when charge is low, medium, or high  
-  - create volume notification script/sound applet, maybe use `dunst`
+  + change the battery scripts so that the percentage changes color when charge is low, medium, or high  
+  + create volume notification script/sound applet, maybe use `dunst`
 
 ### Global Linux
 - terminal calendar with google support, `gcalcli`, `khan` or `calcurse` are options
