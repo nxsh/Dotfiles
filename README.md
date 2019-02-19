@@ -4,6 +4,9 @@
 ## Dotfiles To Do
 
 ### PRIORITY
+- uninstall current `mopidy-spotify`
+- install (Blacklight?) version for working playlists
+
 - create system to sync dotfiles to this repo and the corresponding directory on my machine autonomously
   + e.g. sync i3 config to `~/.config/i3/config`
 - create script to copy local uni files to xanthus as backups
