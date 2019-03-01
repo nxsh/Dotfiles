@@ -4,12 +4,16 @@
 ## Dotfiles To Do
 
 ### PRIORITY
-- uninstall current `mopidy-spotify`
-- install (Blacklight?) version for working playlists
-
+- sound and brightness notifications
+- ncmpcpp spotify playlists
 - create system to sync dotfiles to this repo and the corresponding directory on my machine autonomously
   + e.g. sync i3 config to `~/.config/i3/config`
 - create script to copy local uni files to xanthus as backups
+
+## Latest Changes
+- `mopidy` and `mopidy-spotify` installed from PPA
+  + workin correctly but no playlist support
+  + when creating playlists, an empty duplicate is created
   
 ### i3/i3blocks
 - edit i3blocks scripts to make them more interesting
