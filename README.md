@@ -4,6 +4,8 @@
 ## Dotfiles To Do
 
 ### PRIORITY
+- workspace icons
+- bluetooth generic controls (for multiple speakers)
 - sound and brightness notifications
 - ncmpcpp spotify playlists
 - create system to sync dotfiles to this repo and the corresponding directory on my machine autonomously
