@@ -4,6 +4,8 @@
 ## Dotfiles To Do
 
 ### PRIORITY
+- backup whole pc somewhere else!!!!
+- terminal resize floating increases window size?? ctrl - and shift, cdtrl +
 - workspace icons
 - bluetooth generic controls (for multiple speakers)
 - sound and brightness notifications

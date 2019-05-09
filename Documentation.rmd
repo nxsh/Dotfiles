@@ -290,3 +290,22 @@ $ sudo make install
 
 # Bumblebee
 * Install `sudo apt-get install bumblebee bumblebee-nvidia primus linux-headers-generic`
+
+# Issues
+- i3 only shows borders on the inactive Windows, test out having borders permanently on all windows
+- edit i3blocks scripts to make them more interesting
+  - change the battery scripts so that the percentage changes color when charge is low, medium, or high
+
+# To Test Out
+* Vim pathogen
+* Vim markdown syntax plugins
+* Aliases
+* Vim `listchars`
+* `acpilight`
+* Using `thermald` over `thinkfan`
+* `bumblebee` for GPU management
+* gcalcli
+* Sound applet
+* Pywal
+* SolArc color scheme
+* Powerline/Airline
