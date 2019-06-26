@@ -238,6 +238,7 @@ $ sudo make install
 * *Note that my Visualiser script must be run on each boot*
 
 ### Getting Spotify playlists to work
+
 * Kill all instances of mopidy, then remove installed `mopidy-spotify` package
 * `sudo apt-get remove mopidy-spotify`
     + `sudo apt autoremove`
@@ -245,7 +246,7 @@ $ sudo make install
     + `sudo apt install libspotify12 python-cffi python-ply python-pycparser python-spotify`
 * Clone mopidy-spotify from GitHub repo
     + `git clone https://github.com/BlackLight/mopidy-spotify.git /tmp/mopidy-spotify`
-*Go to cloned directory
+* Go to cloned directory
     + `cd mopidy-spotify`
 * Switch to `fix/incompatible_playlists` branch
     + `sudo git checkout fix/incompatible_playlists`
@@ -253,11 +254,13 @@ $ sudo make install
     + `sudo python2 setup.py build install`
 
 ### Visualiser Script Breakdown    
+
 * create fifo file for visualiser `mkfifo /tmp/mpd.fifo`
 * run `while :; do socat -d -d -T 1 -u UDP4-LISTEN:5555 OPEN:/tmp/mpd.fifo; done &`
 * notice the '&' at the end, this lets the command run in the background, freeing up terminal space
 
 ## Misc Required Programs
+
 * `xbacklight` (controls brightness in i3)
 * `redshift` (warmer colors at night)
 * `rofi` (used by i3 to launch programs instead of `dmenu`)
@@ -284,17 +287,32 @@ $ sudo make install
     + Syntax is `alias **name**='path to script/command name'`
 
 # Virtualisation
+
 * Install `libvirt-bin` and `virt-manager`
 * Add `intel-iommu=on` to `GRUB_CMDLINE_LINUX_DEFAULT` between quotes
 * Run `sudo update-grub` then reboot
 
 # Bumblebee
+
 * Install `sudo apt-get install bumblebee bumblebee-nvidia primus linux-headers-generic`
 
 # Issues
+
+- TLP
+  - tlp stat -b shows that BAT0 (internal) status is unknown and 'threshold effective'
+
+* CPU throttled on boot with any linux distro, T480 specific issue
+
+## Debian
+
+- iBus KB layout applet (indicator applet) does not have UK English, only 'UK Extended WinKeys'
+  - it also opens as a window when i3 is restarted
+  - same issue with nm-applet, it opens in a window when i3 is restarted (shift,$mod,r)
 - i3 only shows borders on the inactive Windows, test out having borders permanently on all windows
 - edit i3blocks scripts to make them more interesting
   - change the battery scripts so that the percentage changes color when charge is low, medium, or high
+
+* When shutting down or rebooting message 'Watchdog0 did not stop'
 
 # To Test Out
 * Vim pathogen

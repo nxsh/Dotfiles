@@ -1,4 +1,4 @@
-# Linux Error Codes
+# Debian Linux Error Codes
 ## Needs sorting through
 
 [    2.886713] systemd[1]: live-tools.service: Cannot add dependency job, ignoring: Unit live-tools.service is masked.

@@ -27,5 +27,3 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 * To add our dotfiles to this repo we use `config` instead of `git` 
     + E.g. `config add .vimrc`
 * We can even use this method with `symlinks` if desired, as we can clone the repo and use it's content as symlinks
-
-
